@@ -1,0 +1,139 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I image genrator </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="STYLE.CSS">
+    </head>
+    <body class=" " >
+        <div class="container">
+            <!-- header  -->
+            <header class="header" >
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <i class="fa-solid fa-wand-magic-sparkles" ></i>
+                    </div>
+                    <h1>learnardo.ai</h1>
+                </div>
+                
+               <button class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+               </button>
+
+            </header>
+
+
+
+                <div class="main-content">
+                     <form action="#" class="prompt-form" >
+                    <!-- promt container  -->
+                    <div class="prompt-container"  >  
+                     <textarea name="" class="prompt-input" placeholder="Descibe your imaginaton in  detail" required autofocus ></textarea>
+
+                     <button type="button" class="prompt-btn"  >
+                        <i class="fa-solid fa-dice"></i>
+                     </button>
+
+                     </div>
+
+
+                     <!-- prompt action button  -->
+                      <div class="prompt-actions">
+                        <div class="select-wrapper">
+                            <select class="custom-select" id="model-select" required>
+                                <option value="" selected disabled>Select Model</option>
+                                <option value="black-forest-labs/FLUX.1-dev">FLUX.1-DEV</option>
+                                <option value="black-forest-labs/FLUX.1-schnell">FLUX.schnel</option>
+                                <option value="stableityai/stable-diffusion-xl-basse-1">Stable-Diffusion-XL</option>
+                                <option value="black-forest-labs/FLUX.1-dev">Stable-Diffusion v1.5</option>
+                                <option value="black-forest-labs/FLUX.1-dev" >Openjoureney FLUX.1-DEV</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper">
+                            <select class="custom-select" id="count-select" required >
+                                <option value="" selected disabled >Images count</option>
+                                <option value="1">1 Images</option>
+                                <option value="2">2 Images</option>
+                                <option value="3">3 Images</option>
+                                <option value="4">4 Images</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper">
+                            <select class="custom-select" id="ratio-select" required>
+                                <option value="" selected disabled >Aspect Ratio</option>
+                                <option value="1/1">Square (1:1)</option>
+                                <option value="16/9">Landscape(16:9)</option>
+                                <option value="9/16">portrait (9:16)</option>
+                                
+                            </select>
+                        </div>
+
+                         
+                    
+                            <button type="submit" class="gererate-btn">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>Generate
+                            </button>
+                        
+                        
+
+                      </div>
+
+ 
+                 <!-- Reasult gallary grid  -->
+                <div class="gallary-grid">
+                    <div class="img-card loading">
+                        <div class="status-container">
+                        <div class="spinner"></div>
+                        <i class="fa-solid fa-triangle-exclamation" ></i>
+                        <p class="status-text">Generating..</p>
+                     </div>
+                        <img src="demoimage.png.jpeg" class="result-img" alt="">
+
+                        <div class="img-overlay">
+                            <button  class="img-download-btn" >
+                                <i  class="fa-solid fa-download" ></i>
+                            </button>
+                        </div>
+                    </div>
+
+<!-- 
+                      <div class="img-card ">
+                        <div class="status-container">
+                        <div class="spinner"></div>
+                        <i class="fa-solid fa-triangle-exclamation" ></i>
+                        <p class="status-text">Generating..</p>
+                     </div>
+                        <img src="demoimage.png.jpeg" class="result-img" alt="">
+
+                        <div class="img-overlay">
+                            <button  class="img-download-btn" >
+                                <i  class="fa-solid fa-download" ></i>
+                            </button>
+                        </div>
+                    </div> -->
+
+
+
+
+
+
+                    
+
+                </div>
+
+            </div>
+                </form>
+            </div>
+            
+
+        <!-- </div> -->
+
+
+        <script src="script.js"></script>
+        
+    </body>
+    </html>
